@@ -96,6 +96,7 @@ const summariesSection = document.getElementById('summaries-section')
 const articlesGrid = document.getElementById('articles-grid')
 const summariesList = document.getElementById('summaries-list')
 const startBtn = document.getElementById('start-btn')
+const homeBtn = document.getElementById('home-btn')
 const navBtns = document.querySelectorAll('.nav-btn')
 const categoryFilter = document.getElementById('category-filter')
 const searchInput = document.getElementById('search-input')
@@ -133,6 +134,8 @@ function showSection(sectionName) {
 }
 
 startBtn.addEventListener('click', () => showSection('discover'))
+
+homeBtn.addEventListener('click', () => showSection('hero'))
 
 navBtns.forEach(btn => {
   btn.addEventListener('click', (e) => {

@@ -74,6 +74,21 @@ body {
   align-items: center;
   gap: 0.75rem;
   flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.navbar-brand:hover {
+  background: rgba(168, 85, 247, 0.1);
+  transform: translateY(-2px);
+}
+
+.navbar-brand:active {
+  transform: translateY(0);
 }
 
 .brand-icon {

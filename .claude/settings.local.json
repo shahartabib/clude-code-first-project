@@ -9,7 +9,16 @@
       "Bash(git commit:*)",
       "Bash(git checkout:*)",
       "Bash(gh:*)",
-      "Bash(powershell -Command \"gh --version\")"
+      "Bash(powershell -Command \"gh --version\")",
+      "Bash(npm install:*)",
+      "Bash(npm ls:*)",
+      "Bash(npx vite:*)",
+      "Bash(git push:*)",
+      "Bash(npm run build:*)",
+      "Bash(dir:*)",
+      "Bash(tree:*)",
+      "Read(//c/Users/Shahar Tabib/Downloads/**)",
+      "Bash(npm run dev:*)"
     ],
     "deny": [],
     "ask": []

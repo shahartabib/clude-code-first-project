@@ -3,13 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite SPA Boilerplate</title>
+    <title>AI Learning Methods - Articles & Summaries</title>
   </head>
   <body>
     <div id="app">
-      <h1>Welcome to Vite SPA Boilerplate</h1>
-      <p>Edit <code>src/main.js</code> and save to test Hot Module Replacement.</p>
-      <button id="counter-btn">Count: 0</button>
+      <!-- Navigation Header -->
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="navbar-brand">
+            <span class="brand-icon">🧠</span>
+            <h1 class="brand-title">AI Learning Methods</h1>
+          </div>
+          <div class="navbar-menu">
+            <button class="nav-btn" data-section="discover">Discover</button>
+            <button class="nav-btn" data-section="summaries">Summaries</button>
+            <button class="nav-btn" data-section="curated">Curated</button>
+          </div>
+          <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search articles...">
+            <button class="search-btn">🔍</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+          <div class="hero-content">
+            <h2>Discover Learning Methods in the AI Era</h2>
+            <p>AI-curated articles and summaries about modern learning techniques powered by artificial intelligence</p>
+            <button class="btn-primary" id="start-btn">Start Exploring</button>
+          </div>
+          <div class="hero-visual">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+          </div>
+        </section>
+
+        <!-- Articles Grid Section -->
+        <section id="articles-section" class="articles-section hidden">
+          <div class="section-header">
+            <h3>Latest Articles</h3>
+            <div class="filter-controls">
+              <select id="category-filter" class="filter-select">
+                <option value="">All Categories</option>
+                <option value="learning">Learning Methods</option>
+                <option value="ai">AI & Education</option>
+                <option value="brain">Brain Science</option>
+                <option value="productivity">Productivity</option>
+              </select>
+            </div>
+          </div>
+          <div id="articles-grid" class="articles-grid">
+            <!-- Articles will be loaded here -->
+          </div>
+        </section>
+
+        <!-- Summaries Section -->
+        <section id="summaries-section" class="summaries-section hidden">
+          <div class="section-header">
+            <h3>AI-Generated Summaries</h3>
+          </div>
+          <div id="summaries-list" class="summaries-list">
+            <!-- Summaries will be loaded here -->
+          </div>
+        </section>
+
+        <!-- Loading Spinner -->
+        <div id="loading-spinner" class="loading-spinner hidden">
+          <div class="spinner"></div>
+          <p>Loading articles...</p>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>&copy; 2025 AI Learning Methods. Powered by AI & LLM technology.</p>
+      </footer>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
